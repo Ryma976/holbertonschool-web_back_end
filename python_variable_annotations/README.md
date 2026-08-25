@@ -13,5 +13,6 @@ This project covers Python 3 type annotations, including function parameter anno
 | `4-define_variables.py` | Define and annotate variables with specified types and values. |
 | `5-sum_list.py` | Type-annotated function `sum_list` that takes a list of floats and returns their sum as a float. |
 | `6-sum_mixed_list.py` | Type-annotated function `sum_mixed_list` that takes a list of integers and floats and returns their sum as a float. |
-| `7-to_kv.py` | Type-annotated function `to_kv` that takes a string `k` and an int or float `v` and returns a tuple containing `k` and the square of `v` as a float. |
-| `8-make_multiplier.py` | Type-annotated function `make_multiplier` that takes a float `multiplier` and returns a function that multiplies a float by `multiplier`. |
+| `7-to_kv.py` | Type-annotated function `to_kv` that takes a string `k` and an int or float `v` and returns a tuple. |
+| `8-make_multiplier.py` | Type-annotated function `make_multiplier` that takes a float and returns a multiplier function. |
+| `9-element_length.py` | Type-annotated function `element_length` that takes an iterable of sequences and returns a list of tuples. |
