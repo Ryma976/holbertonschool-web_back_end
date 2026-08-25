@@ -12,3 +12,4 @@ This project covers Python 3 type annotations, including function parameter anno
 | `3-to_str.py` | Type-annotated function `to_str` that takes a float `n` and returns its string representation. |
 | `4-define_variables.py` | Define and annotate variables with specified types and values. |
 | `5-sum_list.py` | Type-annotated function `sum_list` that takes a list of floats and returns their sum as a float. |
+| `6-sum_mixed_list.py` | Type-annotated function `sum_mixed_list` that takes a list of integers and floats and returns their sum as a float. |
