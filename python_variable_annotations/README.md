@@ -17,3 +17,4 @@ This project covers Python 3 type annotations, including function parameter anno
 | `8-make_multiplier.py` | Type-annotated function `make_multiplier` that takes a float and returns a multiplier function. |
 | `9-element_length.py` | Type-annotated function `element_length` that takes an iterable of sequences and returns a list of tuples. |
 | `100-safe_first_element.py` | Duck-typed annotations for returning the first element of a sequence or None. |
+| `101-safely_get_value.py` | Advanced annotations using TypeVar to safely get a value from a dict/mapping. |
