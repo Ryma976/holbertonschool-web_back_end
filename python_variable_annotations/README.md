@@ -10,3 +10,4 @@ This project covers Python 3 type annotations, including function parameter anno
 | `1-concat.py` | Type-annotated function `concat` that takes strings `str1` and `str2` and returns a concatenated string. |
 | `2-floor.py` | Type-annotated function `floor` that takes a float `n` and returns its floor as an integer. |
 | `3-to_str.py` | Type-annotated function `to_str` that takes a float `n` and returns its string representation. |
+| `4-define_variables.py` | Define and annotate variables with specified types and values. |
