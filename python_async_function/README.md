@@ -10,3 +10,4 @@ This project covers asynchronous programming in Python using `asyncio`, coroutin
 | `1-concurrent_coroutines.py` | Async routine `wait_n` that executes multiple `wait_random` coroutines concurrently and returns delays in completion order. |
 | `2-measure_runtime.py` | Function `measure_time` that measures the average execution time per task for `wait_n`. |
 | `3-tasks.py` | Function `task_wait_random` that takes `max_delay` and returns an `asyncio.Task`. |
+| `4-tasks.py` | Async routine `task_wait_n` that calls `task_wait_random` n times concurrently and returns delays in completion order. |
