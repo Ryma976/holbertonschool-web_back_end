@@ -16,3 +16,4 @@ This project covers Python 3 type annotations, including function parameter anno
 | `7-to_kv.py` | Type-annotated function `to_kv` that takes a string `k` and an int or float `v` and returns a tuple. |
 | `8-make_multiplier.py` | Type-annotated function `make_multiplier` that takes a float and returns a multiplier function. |
 | `9-element_length.py` | Type-annotated function `element_length` that takes an iterable of sequences and returns a list of tuples. |
+| `100-safe_first_element.py` | Duck-typed annotations for returning the first element of a sequence or None. |
