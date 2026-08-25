@@ -11,3 +11,4 @@ This project covers Python 3 type annotations, including function parameter anno
 | `2-floor.py` | Type-annotated function `floor` that takes a float `n` and returns its floor as an integer. |
 | `3-to_str.py` | Type-annotated function `to_str` that takes a float `n` and returns its string representation. |
 | `4-define_variables.py` | Define and annotate variables with specified types and values. |
+| `5-sum_list.py` | Type-annotated function `sum_list` that takes a list of floats and returns their sum as a float. |
