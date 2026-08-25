@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Module for task 1: Async Comprehensions."""
+"""Async comprehension module."""
+
 from typing import List
+
 
 async_generator = __import__('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
-    """Collect 10 random numbers using async comprehension over async_generator."""
+    """Collect 10 random numbers from async_generator and return them."""
     return [i async for i in async_generator()]
