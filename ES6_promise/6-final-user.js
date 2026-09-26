@@ -1,5 +1,5 @@
 import signUpUser from './4-user_promise';
-import uploadPhoto from './5-photo_reject';
+import uploadPhoto from './5-photo-reject';
 
 export default function handleProfileSignup(firstName, lastName, fileName) {
   return Promise.allSettled([
