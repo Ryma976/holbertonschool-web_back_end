@@ -7,11 +7,9 @@ class StudentsController {
       .then((fields) => {
         const output = ['This is the list of our students'];
         const sortedFields = Object.keys(fields).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
-
         sortedFields.forEach((field) => {
           output.push(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
         });
-
         response.status(200).send(output.join('\n'));
       })
       .catch(() => {
@@ -25,7 +23,6 @@ class StudentsController {
       response.status(500).send('Major must be CS or SWE');
       return;
     }
-
     const dbFile = process.argv[2] || '';
     readDatabase(dbFile)
       .then((fields) => {

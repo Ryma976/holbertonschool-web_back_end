@@ -11,22 +11,17 @@ function countStudents(path) {
       reject(new Error('Cannot load the database'));
       return;
     }
-
     fs.readFile(path, 'utf-8', (err, data) => {
       if (err) {
         reject(new Error('Cannot load the database'));
         return;
       }
-
-      const lines = data.trim().split('\n').filter((line) => line.length > 0);
+      const lines = data.split('\n').filter((line) => line.trim() !== '');
       if (lines.length <= 1) {
         resolve('Number of students: 0');
         return;
       }
-
       const students = lines.slice(1);
-      let output = `Number of students: ${students.length}`;
-
       const fields = {};
       students.forEach((student) => {
         const parts = student.split(',');
@@ -39,11 +34,10 @@ function countStudents(path) {
           fields[field].push(firstname);
         }
       });
-
+      let output = `Number of students: ${students.length}`;
       for (const [field, names] of Object.entries(fields)) {
         output += `\nNumber of students in ${field}: ${names.length}. List: ${names.join(', ')}`;
       }
-
       resolve(output);
     });
   });
@@ -58,8 +52,8 @@ app.get('/students', (req, res) => {
     .then((data) => {
       res.send(`This is the list of our students\n${data}`);
     })
-    .catch((error) => {
-      res.send(`This is the list of our students\n${error.message}`);
+    .catch((err) => {
+      res.send(`This is the list of our students\n${err.message}`);
     });
 });
 

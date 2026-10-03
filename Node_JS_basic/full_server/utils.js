@@ -10,16 +10,13 @@ const readDatabase = (filePath) => new Promise((resolve, reject) => {
       reject(new Error('Cannot load the database'));
       return;
     }
-
-    const lines = data.trim().split('\n').filter((line) => line.length > 0);
+    const lines = data.split('\n').filter((line) => line.trim() !== '');
     if (lines.length <= 1) {
       resolve({});
       return;
     }
-
     const students = lines.slice(1);
     const fields = {};
-
     students.forEach((student) => {
       const parts = student.split(',');
       if (parts.length >= 4) {
@@ -31,7 +28,6 @@ const readDatabase = (filePath) => new Promise((resolve, reject) => {
         fields[field].push(firstname);
       }
     });
-
     resolve(fields);
   });
 });
