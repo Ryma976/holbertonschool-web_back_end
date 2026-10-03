@@ -2,7 +2,7 @@ import readDatabase from '../utils';
 
 class StudentsController {
   static getAllStudents(request, response) {
-    const dbFile = process.argv[2] || '';
+    const dbFile = process.argv[2];
     readDatabase(dbFile)
       .then((fields) => {
         const output = ['This is the list of our students'];
@@ -20,10 +20,10 @@ class StudentsController {
   static getAllStudentsByMajor(request, response) {
     const { major } = request.params;
     if (major !== 'CS' && major !== 'SWE') {
-      response.status(500).send('Major must be CS or SWE');
+      response.status(500).send('Major parameter must be CS or SWE');
       return;
     }
-    const dbFile = process.argv[2] || '';
+    const dbFile = process.argv[2];
     readDatabase(dbFile)
       .then((fields) => {
         const list = fields[major] || [];
